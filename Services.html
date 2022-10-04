@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
 body {
   background-color:#e6f2ff;
@@ -35,14 +36,6 @@ body {
   font-weight: 900;
 }
 
-.profilepicture {
-   background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png');
-   background-size: contain; 
-   height:15vw; width:15vw; 
-   padding-top:1%; 
-   border-radius: 100%; 
-   border: 0.5vw solid black;   
-}
 
 .products{
     width: 50%;
@@ -51,17 +44,32 @@ body {
     justify-content: space-around;
     box-sizing: border-box;
     align-items: center;
+    margin-left: 10%;
 }
+
+
 
 .product{
    background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-512.png');
    background-size: contain; 
-   height:5vw; 
-   width:5vw; 
+   height:8vw; 
+   width:8vw; 
    padding-top:1%; 
-   border: 0.2vw solid black;  
+   border: 0.2vw solid black; 
+   box-shadow: 4px 6spx #888888
+    
 }
 
+.chat{
+    height:5vw; 
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center; 
+}
 
 body {
 overflow: scroll;
@@ -82,44 +90,39 @@ display: flex;
   <a href="#Cart">Cart</a>
 </div>
 
-<center style= "position: absolute;width: 100%; top: 20%;">
+<div class="ProductsClubs" style="position: absolute; height: 40%;width: 100%; top: 20%;">
+<p style="font-size:1.5vw; font-weight: bold; margin-left: 10%">Connect with business owners to know more about the products</p>
 
-<div class="profilepicture" >
+
+<div class= "products">
+<div class="product" >
   <img src="" style="height:10vw">
+  <div class="chat">
+  <i class="material-icons" style="font-size:2vw;color:blue;text-shadow:0.5vw 0.5vw 1vw #000000;display: flex;position: relative;">chat</i>
+  <i class="material-icons" style="font-size:2vw;color:blue;text-shadow:0.5vw 0.5vw 1vw #000000;display: flex;position: relative;">email</i>
+  </div>
 </div>
-
-</center>
-
-<div style="position: absolute; height: 40%;width: 100%; top: 50%;">
-<p style="font-size:1.5vw; font-weight: bold; margin-left: 20%">Info</p>
-<center style="height:70%;">
-<table style="height:100%; width: 50%; font-size: 2vw;">
-  <tr>
-    <td>Name:</td>
-    <td></td>
-    <td>First Name:</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Phone Number:</td>
-    <td></td>
-    <td>Address:</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Email:</td>
-    <td></td>
-    <td>Student ID:</td>
-    <td></td>
-  </tr>
-</table> 
-</center>
+<div class="product" >
+  <img src="" style="height:10vw">
+  <div class="chat">
+  <i class="material-icons" style="font-size:2vw;color:blue;text-shadow:0.5vw 0.5vw 1vw #000000;display: flex;position: relative;">chat</i>
+  <i class="material-icons" style="font-size:2vw;color:blue;text-shadow:0.5vw 0.5vw 1vw #000000;display: flex;position: relative;">email</i>
+  </div>
 </div>
-
+<div class="product" >
+  <img src="" style="height:10vw">
+  <div class="chat">
+  <i class="material-icons" style="font-size:2vw;color:blue;text-shadow:0.5vw 0.5vw 1vw #000000;display: flex;position: relative;">chat</i>
+  <i class="material-icons" style="font-size:2vw;color:blue;text-shadow:0.5vw 0.5vw 1vw #000000;display: flex;position: relative;">email</i>
+  </div>
+</div>
+</div>
 
 <div class="ProductsClubs" style="position: absolute; height: 40%;width: 100%; top: 90%;">
-<p style="font-size:1.5vw; font-weight: bold; margin-left: 20%">Products</p>
-<center>
+
+<p style="font-size:1.5vw; font-weight: bold; margin-left: 10%">Advertisements</p>
+
+
 <div class= "products">
 <div class="product" >
   <img src="" style="height:10vw">
@@ -131,28 +134,14 @@ display: flex;
   <img src="" style="height:10vw">
 </div>
 </div>
-</center>
 
-<p style="font-size:1.5vw; font-weight: bold; margin-left: 20%">Clubs</p>
-<center>
-<div class= "products">
-<div class="product" >
-  <img src="" style="height:10vw">
-</div>
-<div class="product" >
-  <img src="" style="height:10vw">
-</div>
-<div class="product" >
-  <img src="" style="height:10vw">
-</div>
-</div>
-</center>
 
 
 
 </div>
 
 
+</div>
 
 </body>
 </html>

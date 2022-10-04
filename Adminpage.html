@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+body {
+  background-color:#e6f2ff;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 20%;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.navbar a {
+
+  margin: auto;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.3vw;
+  font-weight: 900;
+}
+
+Table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+Table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+}
+
+Table td, Table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.title p {
+
+  text-align: center;
+  font-size: 2em;
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 10%;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.tables {
+    position: absolute;
+    top: 30%;
+    width: 70%;
+    height: 100%;
+    transition: all 0.5s ease;
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box; 
+    margin: 5vw;   
+}
+
+body {
+overflow: scroll;
+display: flex;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="Homepage.html" class="active">Home</a>
+  <a href="Aboutpage.html">About</a>
+  <a href="Services.html">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="#Login">Login/Register</a>
+  <a href="#Cart">Cart</a>
+</div>
+<div class="title">
+<p>Admin page</p>
+</div>
+
+
+<div class="tables">
+
+<center><div id="piechart" style="border: 2px solid black; display:flex;"></div></center>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Role', 'count'],
+  ['Business Owners', 5],
+  ['Schools', 4],
+  ['Students', 8],
+]);
+
+  var options = {'title':'Pie Chart', 'width':550, 'height':400};
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+<div class="table-block">
+              <h1>Business owners</h1>
+              <table>
+                <thead>
+                  <th>ID</th>
+                  <th>Business owner</th>
+                  <th>Type</th>
+                  <th>Email</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Ajay</td>
+                    <td>Food</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>poojitha</td>
+                    <td>Electronics</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>prasad</td>
+                    <td>Stationary</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Ajay</td>
+                    <td>Food</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>poojitha</td>
+                    <td>Food</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-block">
+              <h1>Schools</h1>
+              <table>
+                <thead>
+                  <th>ID</th>
+                  <th>School name</th>
+                  <th>Location</th>
+                  <th>Branch</th>
+                  <th>Email</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1000</td>
+                    <td>Southern methodist</td>
+                    <td>Texas</td>
+                    <td>Irving</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>1001</td>
+                    <td>texas christian</td>
+                    <td>Texas</td>
+                    <td>Frisco</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>1002</td>
+                    <td>University of houston</td>
+                    <td>Texas</td>
+                    <td>Houston</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>1003</td>
+                    <td>Texas tech Unv</td>
+                    <td>Texas</td>
+                    <td>plano</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-block">
+              <h1>Students</h1>
+              <table>
+                <thead>
+                  <th>s.no</th>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Branch</th>
+                  <th>Email</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>1111</td>
+                    <td>Ajay</td>
+                    <td>CSE</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>1112</td>
+                    <td>poojitha</td>
+                    <td>CSE</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>1113</td>
+                    <td>Greyson</td>
+                    <td>msc</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>1114</td>
+                    <td>Prasad</td>
+                    <td>CSE</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>1115</td>
+                    <td>Ajay</td>
+                    <td>MIS</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>1116</td>
+                    <td>Dean</td>
+                    <td>msc</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>1117</td>
+                    <td>Poojitha</td>
+                    <td>MIS</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>1118</td>
+                    <td>Prasad</td>
+                    <td>MIS</td>
+                    <td>abc@gmail.com</td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+</div>
+
+
+</body>
+</html>
