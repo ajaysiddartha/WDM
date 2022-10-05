@@ -1,0 +1,164 @@
+<style>
+.tab {
+  overflow: hidden;
+}
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+
+
+body{
+ margin: 0;
+ padding: 0;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.Cart-Container{
+ text-align: center;
+ width: 70%;
+ height: 85%;
+  border-radius: 20px;
+}
+.amount{
+ padding-top: 12px;
+ line-height: 10px;
+ font-size: 16px;
+}
+.remove
+{
+ line-height: 2px;
+ font-size: 18px;
+ cursor: pointer;
+}
+ 	
+
+
+.title{
+ padding-top: 20px;
+ line-height: 10px;
+ font-size: 20px;
+ font-family: ‘Open Sans’;
+ font-weight: 1800;
+}
+.subtitle{
+ line-height: 10px;
+ font-size: 18px;
+ font-family: ‘Open Sans’;
+ color: #909090;
+}
+
+p{
+  color: red;
+}
+
+
+.checkout{
+ float: right;
+ margin-right:15%;
+ width: 28%;
+}
+.button{
+ margin-top: 5px;
+ width: 50%;
+ height: 40px;
+ border: none;
+ border-radius: 20px;
+ cursor: pointer;
+ font-size: 16px;
+ font-family: ‘Open Sans’;
+ font-weight: 600;
+}
+
+
+table
+{
+  border-top: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom:collapse;
+}
+
+
+
+</style>
+<div class="Cart-Container">
+<div class="tab">
+  <button class="tablinks" >Login/Register</button>
+  <button class="tablinks" >Contact</button>
+  <button class="tablinks" >Services</button>
+  <button class="tablinks" >About</button>
+  <button class="tablinks" >Home</button>
+</div>
+<div class="Header"><h3 class="Heading"> Cart</h3></div>
+
+
+
+
+<table>
+  <tr>
+    <th><img src="images/apple.png" style={{ height="120px" }} /></th>
+    <th><div class="about">
+    <h1 class="title">Bananas</h1>
+    <h3 class="subtitle">2 kilograms</h3>
+    </th>
+    <th><div class="amount">$4.99</div>
+     <div class="remove"><p><u>remove</u><p></div></th>
+  </tr>
+  
+  <tr>
+    <td><img src="images/apple.png" style={{ height="120px" }} /></td>
+    <td><div class="about">
+    <h1 class="title">Milk</h1>
+    <h3 class="subtitle">250ml</h3></td>
+    <td><div class="amount">$2.99></div>
+    <div class="remove"><p><b><u>remove</u><p></b></div></th>
+   </th></td>
+ </tr>
+  
+<tr>
+    <td></td>
+    <td><b><div class="about">
+    <h1 class="title">Add more products</h1></b>
+    <img src="images/veg.png" style={{ height="30px"}}/></td>
+    <td><b><div class="about">
+    <h1 class="title">Sub-Total:7.98</h1></b></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <div class="checkout">
+    <td><button class="button">Checkout</button></td>
+  </tr>
+</table>
+
+</body>	
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
